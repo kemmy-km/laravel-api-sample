@@ -24,6 +24,13 @@ Route::get('youtube/channels/{id}/titles', 'Api\YoutubeController@getListByChann
 
 画面上にタイトルのリストが描画される。
 
+## Youtube
+https://developers.google.com/youtube/v3/docs/videos/list?hl=ja
+`GET https://www.googleapis.com/youtube/v3/videos`
+
+「v3/videos」で動画の再生数や高評価数を取得することができます。
+
+
 ---
 以下、LaravelのデフォルトDocs
 
