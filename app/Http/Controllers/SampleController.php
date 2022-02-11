@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class SampleController extends Controller
 {
-    //
+    /** コントローラで指定するタイプのAPIメソッド */
     public function apiHello() {
         return response()->json(
             [
