@@ -5,7 +5,7 @@
 ## `.env`にセット
 `GOOGLE_API_KEY = "YOURKEYXXXX"`
 
-## Controllerをp生成
+## Controllerを生成
 `php artisan make:controller YoutubeController`
 
 ## web.phpにRouting生成
