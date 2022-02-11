@@ -1,3 +1,33 @@
+
+## GoogleAPIをインストール
+`composer require google/apiclient:"^2.0"`
+
+## `.env`にセット
+`GOOGLE_API_KEY = "YOURKEYXXXX"`
+
+## Controllerをp生成
+`php artisan make:controller YoutubeController`
+
+## web.phpにRouting生成
+```php
+<?php
+Route::get('youtube/channels/{id}/titles', 'Api\YoutubeController@getListByChannelId');
+
+>
+```
+
+## View生成
+`index.blade.php`
+
+## 実行
+`php artisan serve`
+
+画面上にタイトルのリストが描画される。
+
+---
+以下、LaravelのデフォルトDocs
+
+---
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
